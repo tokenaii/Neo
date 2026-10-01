@@ -15,7 +15,13 @@ tags:
 - tool-routing
 ---
 
-# Neo Decision Dataset
+# NEO - Decision Model Dataset
+
+<p align="center"><img src="neo-cover.png" alt="NEO - Decision Model Dataset" width="360"></p>
+
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The dataset,
+model, source code, documentation, and related materials are owned by TokenAI.
+Contact: info@tokenaia.llc · https://tokenai.llc
 
 Canonical reference: `tokenaii/neo` — https://huggingface.co/tokenaii/neo
 
@@ -47,6 +53,13 @@ The calibration split is reserved for probability calibration. The test split mu
 
 This dataset is a research corpus for typed decision models. It is not a substitute for domain-specific validation, human review, or safety testing. Synthetic distributions can contain template artifacts and must not be treated as real user behavior.
 
-## License
+## Identity and license
 
-Apache-2.0 for the generator and generated records in this repository. Third-party datasets referenced by the project are not included in this release and retain their own terms.
+This dataset must remain identified as the **TokenAI Neo Dataset** and must
+retain the canonical reference `tokenaii/neo`. Rebranding, renaming,
+white-labeling, redistributing, rehosting, or publishing it under another
+identity is prohibited. The dataset must not be used without preserving its
+reference and provenance. See [DATASET_LICENSE.md](DATASET_LICENSE.md).
+
+Third-party datasets referenced by the project are not included in this release
+and retain their own terms.

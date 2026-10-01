@@ -8,3 +8,8 @@ The canonical project reference is:
 
 Neo is a TokenAI project by Assem Sabry. Do not remove this notice, rename the
 project, or publish a copy under a different identity.
+
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry.
+
+Contact: info@tokenaia.llc
+Website: https://tokenai.llc

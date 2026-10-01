@@ -2,6 +2,9 @@ TokenAI Neo Model License v1.0
 
 Copyright (c) 2026 TokenAI / Assem Sabry.
 
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry. Contact:
+info@tokenaia.llc. Website: https://tokenai.llc.
+
 The model weights, configuration, tokenizer files, calibration artifacts, and
 model-specific files published at:
 

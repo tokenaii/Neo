@@ -10,7 +10,13 @@ tags:
 - tool-routing
 ---
 
-# Neo
+# NEO - Decision Model
+
+<p align="center"><img src="neo-cover.png" alt="NEO" width="360"></p>
+
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The Neo model,
+source code, training data, documentation, and related materials are owned by
+TokenAI. Contact: info@tokenaia.llc · https://tokenai.llc
 
 Neo is a TokenAI System One decision model. It reads application state and a
 declared decision schema and returns typed probabilities for `choice`, `score`,
@@ -24,6 +30,12 @@ Dataset: https://huggingface.co/datasets/tokenaii/neo-dataset
 Training method: RLCD-inspired soft-target training from scratch on synthetic
 decision records. See the project repository for code, manifests, run logs,
 and evaluation protocols.
+
+The model must remain identified as **TokenAI Neo** and must keep the canonical
+reference `tokenaii/neo`. Rebranding, renaming, white-labeling, redistributing,
+or publishing a copy or derivative checkpoint under another identity is
+prohibited. Do not use the dataset without preserving its `tokenaii/neo`
+reference. All use is subject to [MODEL_LICENSE.md](MODEL_LICENSE.md).
 
 ## License
 

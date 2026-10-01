@@ -1,4 +1,10 @@
-# Neo
+# NEO - Decision Model
+
+<p align="center"><img src="assets/neo-cover.png" alt="NEO" width="360"></p>
+
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The Neo model,
+source code, training data, documentation, and related project materials are
+owned by TokenAI. Contact: info@tokenaia.llc · https://tokenai.llc
 
 Neo is a **System One Model**: a probabilistic decision model that reads an application state and answers typed questions without generating free-form text.
 
@@ -11,6 +17,12 @@ RLCD is treated as a training objective and data-generation loop, not as a claim
 ## Model Category: System One Models
 
 Neo belongs to the **System One Models** category. It returns typed decisions and calibrated probabilities for software to consume directly. It is not a conversational text-generation model.
+
+Neo must remain identified as **TokenAI Neo** and referenced as `tokenaii/neo`.
+Rebranding, renaming, white-labeling, or publishing a copy under another
+identity is prohibited. The same attribution requirement applies to the
+dataset and every derived product that uses it. See [MODEL_LICENSE.md](MODEL_LICENSE.md)
+and [DATASET_LICENSE.md](DATASET_LICENSE.md).
 
 ## Decision interface
 
