@@ -1,0 +1,33 @@
+TokenAI Neo Project License v1.0
+
+Copyright (c) 2026 TokenAI / Assem Sabry.
+
+This license applies to the Neo project source code, training code, scripts,
+configuration, documentation, and examples in this repository unless a file
+states otherwise.
+
+Permission is granted to use, run, study, test, and modify these materials for
+personal, academic, internal, and commercial use, provided that:
+
+1. The primary reference remains TokenAI Neo:
+   https://huggingface.co/tokenaii/neo
+2. The name "TokenAI Neo" and the `tokenaii/neo` reference are not removed,
+   hidden, or replaced when these materials are used or modified.
+3. No modified or unmodified copy of this repository may be redistributed,
+   rehosted, sublicensed, sold, or published as a separate download without
+   prior written permission from TokenAI.
+4. No rebranding, renaming, white-labeling, or representation of this project
+   as another person's or organization's original work is permitted.
+5. Copyright, license, attribution, and provenance notices must remain intact.
+
+Any distribution, hosted service that exposes the materials or weights for
+download, or publication of a derivative checkpoint requires prior written
+permission from TokenAI and must preserve the primary reference to
+`tokenaii/neo`.
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TOKENAI IS
+NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF
+THE MATERIALS.
+
+This is a custom license and should receive legal review before commercial
+enforcement.

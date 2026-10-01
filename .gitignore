@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+data/generated/
+data/generated-large/
+runs/
+logs/
+cache/
+.env
+*.pem
+

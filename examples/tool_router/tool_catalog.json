@@ -1,0 +1,9 @@
+[
+  {"name": "search", "description": "Search public information"},
+  {"name": "calculator", "description": "Perform arithmetic"},
+  {"name": "browser", "description": "Interact with a web page"},
+  {"name": "code", "description": "Write or inspect code"},
+  {"name": "file_read", "description": "Read a local file"},
+  {"name": "human_review", "description": "Escalate to a human reviewer"},
+  {"name": "none", "description": "No tool is appropriate"}
+]
