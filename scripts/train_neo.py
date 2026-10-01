@@ -98,8 +98,14 @@ class NeoModel(nn.Module):
         self.score = nn.Linear(config.hidden_size, 5)
         self.noul = nn.Linear(config.hidden_size, 1)
 
-    def forward(self, input_ids, attention_mask, kinds):
-        hidden = self.encoder(input_ids=input_ids, attention_mask=attention_mask).last_hidden_state[:, 0]
+    def forward(self, input_ids, attention_mask, kinds=None, token_type_ids=None):
+        if kinds is None:
+            kinds = ["choice"] * input_ids.shape[0]
+        hidden = self.encoder(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            token_type_ids=token_type_ids,
+        ).last_hidden_state[:, 0]
         output = torch.zeros((len(kinds), 32), device=hidden.device)
         for index, kind in enumerate(kinds):
             if kind == "choice":
