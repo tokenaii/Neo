@@ -1,6 +1,6 @@
 ---
 license: other
-license_name: tokenai-neo-dataset-license-v1.0
+license_name: tokenai-neo-dataset-license-v2.0
 license_link: https://huggingface.co/datasets/tokenaii/Neo-dataset/blob/main/DATASET_LICENSE.md
 language:
 - en
@@ -60,6 +60,11 @@ retain the canonical reference `tokenaii/Neo`. Rebranding, renaming,
 white-labeling, redistributing, rehosting, or publishing it under another
 identity is prohibited. The dataset must not be used without preserving its
 reference and provenance. See [DATASET_LICENSE.md](DATASET_LICENSE.md).
+
+Commercial, monetized, paid, sponsored, advertising-supported, production,
+client, resale, or financially beneficial use is forbidden. Any model or
+experiment trained with this dataset must clearly state that it used
+`tokenaii/Neo-dataset`.
 
 Third-party datasets referenced by the project are not included in this release
 and retain their own terms.

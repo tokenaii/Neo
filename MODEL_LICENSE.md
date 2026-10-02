@@ -1,31 +1,74 @@
-TokenAI Neo Model License v1.0
+TokenAI Neo Model License v2.0 — Non-Commercial / No-Rebranding
 
 Copyright (c) 2026 TokenAI / Assem Sabry.
 
-TokenAI is a non-profit startup founded in 2025 by Assem Sabry. Contact:
-info@tokenaia.llc. Website: https://tokenai.llc.
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry.
+Contact: info@tokenaia.llc. Website: https://tokenai.llc.
 
-The model weights, configuration, tokenizer files, calibration artifacts, and
-model-specific files published at:
+This license applies to the model weights, configuration, tokenizer, model
+card, calibration artifacts, checkpoints, and model-specific files published
+at https://huggingface.co/tokenaii/Neo.
 
-https://huggingface.co/tokenaii/Neo
+## 1. Limited permission
 
-may be downloaded and used for personal, academic, internal, research, and
-commercial inference, subject to all of the following conditions:
+Permission is granted only for personal, private, non-commercial educational,
+academic, and non-profit research use. No commercial, monetized, paid,
+revenue-generating, sponsored, advertising-supported, employment, client,
+production-business, or other financially beneficial use is permitted.
 
-1. The model must be identified as TokenAI Neo and must reference the primary
-   model repository `tokenaii/Neo`.
-2. The weights and any fine-tuned or merged derivative weights may not be
-   redistributed, rehosted, sublicensed, sold, mirrored, or published for
-   download without prior written permission from TokenAI.
-3. Rebranding, renaming, white-labeling, or presenting the model as a model
-   whose origin is not TokenAI Neo is prohibited.
-4. Attribution and this license must remain visible in model cards, products,
-   documentation, and user-facing notices where the model is used.
-5. A hosted inference service may use the model, but may not provide the
-   weights or a downloadable copy without written permission.
-6. The model is not certified for medical, legal, financial, safety-critical,
-   or autonomous decisions without independent validation and human oversight.
+No person or organization may obtain direct or indirect monetary benefit from
+the model, its outputs, a service powered by it, or a product incorporating it.
 
-THE MODEL IS PROVIDED "AS IS" WITHOUT WARRANTY. THIS CUSTOM LICENSE SHOULD BE
-REVIEWED BY COUNSEL BEFORE ENFORCEMENT.
+## 2. Mandatory identity and attribution
+
+Every permitted use must preserve the exact official name:
+
+**TokenAI Neo — Decision Model**
+
+and must display the canonical reference:
+
+`tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
+
+The notice must be visible in model cards, documentation, user-facing credits,
+and any permitted demonstration. This statement must also be retained:
+
+> This model was trained using the TokenAI Neo Decision Model Dataset:
+> `tokenaii/Neo-dataset`.
+
+## 3. No redistribution or rebranding
+
+Without prior written permission from TokenAI, you may not:
+
+1. redistribute, rehost, mirror, sublicense, sell, publish, or make available
+   the weights or a downloadable copy;
+2. publish, share, or distribute fine-tuned, merged, distilled, quantized,
+   converted, or otherwise derivative weights;
+3. rename, rebrand, white-label, relabel, fork under another identity, or
+   present the model as another person's or organization's model;
+4. remove or obscure TokenAI, Assem Sabry, the official name, canonical
+   references, provenance, or this license;
+5. use the model behind a paid API, paid application, subscription, sponsored,
+   advertising-supported, or otherwise monetized service;
+6. use the model to provide a commercial advantage or private financial gain.
+
+Modifying code around the model does not grant permission to distribute the
+model or derivative weights and does not remove these restrictions.
+
+## 4. Prohibited high-risk use
+
+The model must not be used for unsupervised medical, legal, financial,
+employment, housing, education-admission, insurance, credit, safety-critical,
+government-benefit, law-enforcement, or irreversible decisions.
+
+## 5. Termination and enforcement
+
+Any breach automatically terminates permission. Upon termination, all copies
+and deployed instances must be removed, and any public or private distribution
+must stop. TokenAI reserves all rights and remedies available under applicable
+law.
+
+## 6. Disclaimer
+
+THE MODEL IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THIS CUSTOM
+LICENSE IS NOT LEGAL ADVICE AND MUST BE REVIEWED BY QUALIFIED COUNSEL BEFORE
+ENFORCEMENT.
