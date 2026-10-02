@@ -33,6 +33,10 @@ notices.
 
 Synthetic, schema-driven decision records for training and evaluating Neo, a System One decision model.
 
+The associated Neo checkpoint contains exactly 41,391,654 trainable parameters
+(approximately 41.4 million), as verified from the published `model.safetensors`
+metadata and the model architecture.
+
 ## Contents
 
 - 1,000,000 individual decisions.
