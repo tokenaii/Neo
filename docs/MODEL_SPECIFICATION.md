@@ -41,7 +41,7 @@ before production use.
 - Training decisions: 799,882.
 - Calibration decisions: 100,138.
 - Test decisions: 99,980.
-- Generator: `neo-english-synthetic-v1`.
+- Generator: `neo-english-synthetic`.
 - Language policy: English-only state text, questions, labels, and tool
   descriptions.
 - Provenance: deterministic generator, seed `20261003`, split recorded in each

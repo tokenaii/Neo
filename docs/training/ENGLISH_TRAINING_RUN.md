@@ -7,7 +7,7 @@ The active run trains Neo exclusively on the regenerated English corpus.
 ## Inputs
 
 - Data: `/mnt/opet-data/neo/data/generated-english/neo-english.jsonl`
-- Generator: `neo-english-synthetic-v1`
+- Generator: `neo-english-synthetic`
 - Records: 400,000
 - Decisions: 1,000,000
 - Split: 799,882 train / 100,138 calibration / 99,980 test

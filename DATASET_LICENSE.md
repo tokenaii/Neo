@@ -1,4 +1,4 @@
-TokenAI Neo Dataset License v3.0 — Non-Commercial / No-Rebranding
+TokenAI Neo Dataset License — Non-Commercial / No-Rebranding
 
 Copyright (c) 2026 TokenAI / Assem Sabry.
 
@@ -85,7 +85,7 @@ This license, linked notices, and written permissions are the entire agreement f
 
 ## 14. Amendments
 
-TokenAI may publish revised terms for future releases. A release remains under the version shipped with it unless written permission says otherwise. No retroactive expansion or removal of restrictions occurs without written agreement.
+TokenAI may publish revised terms for future releases. A release remains under the terms shipped with it unless written permission says otherwise. No retroactive expansion or removal of restrictions occurs without written agreement.
 
 ## 15. Disclaimer
 

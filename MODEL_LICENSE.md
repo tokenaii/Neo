@@ -1,4 +1,4 @@
-TokenAI Neo Model License v3.0 — Non-Commercial / No-Rebranding
+TokenAI Neo Model License — Non-Commercial / No-Rebranding
 
 Copyright (c) 2026 TokenAI / Assem Sabry.
 
@@ -81,7 +81,7 @@ This license, its linked notices, and any written permission issued under it are
 
 ## 14. Amendments
 
-TokenAI may publish a revised license for future releases. A release remains under the license version shipped with it unless written permission states otherwise. No amendment retroactively expands a recipient's rights or removes an existing restriction without that recipient's written agreement.
+TokenAI may publish revised license terms for future releases. A release remains under the terms shipped with it unless written permission states otherwise. No amendment retroactively expands a recipient's rights or removes an existing restriction without that recipient's written agreement.
 
 ## 15. Disclaimer
 

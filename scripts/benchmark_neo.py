@@ -11,6 +11,7 @@ from pathlib import Path
 
 import torch
 from transformers import BertTokenizerFast
+from safetensors.torch import load_file
 
 from scripts.train_neo import NeoModel
 
@@ -76,7 +77,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tokenizer = BertTokenizerFast.from_pretrained(args.checkpoint)
     model = NeoModel(len(tokenizer)).to(device).eval()
-    model.load_state_dict(torch.load(args.checkpoint / "pytorch_model.bin", map_location=device))
+    model.load_state_dict(load_file(str(args.checkpoint / "model.safetensors"), device=device))
     records = list(items(args.data))
     per_kind = defaultdict(lambda: {"n": 0, "correct": 0, "nll": 0.0, "brier": 0.0, "conf": [], "ok": []})
     tool_route = {"n": 0, "correct": 0, "predicted_use": 0, "actual_use": 0, "conf": [], "ok": []}

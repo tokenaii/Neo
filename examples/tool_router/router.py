@@ -20,8 +20,9 @@ def main() -> None:
     checkpoint = Path(args.checkpoint)
     tokenizer = BertTokenizerFast.from_pretrained(checkpoint)
     model = NeoModel(len(tokenizer)).cuda().eval()
-    weights = checkpoint / "pytorch_model.bin"
-    model.load_state_dict(torch.load(weights, map_location="cuda"))
+    weights = checkpoint / "model.safetensors"
+    from safetensors.torch import load_file
+    model.load_state_dict(load_file(str(weights), device="cuda"))
     tools = json.loads((Path(__file__).parent / "tool_catalog.json").read_text())
     options = [item["name"] for item in tools]
     prompt = "State: " + args.message + "\nQuestion: Which available tool should handle this request?\nOptions: "

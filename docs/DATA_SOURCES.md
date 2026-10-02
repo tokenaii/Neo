@@ -2,7 +2,7 @@
 
 ## Policy
 
-Neo's first RLCD run will use a synthetic training corpus generated from versioned tool schemas, decision templates, controlled paraphrases, ambiguity transforms, and deterministic validators. Public datasets are source material for schema design, sanity checks, and held-out evaluation unless their license and provenance are explicitly admitted into the training manifest.
+Neo's RLCD run uses a synthetic training corpus generated from tracked tool schemas, decision templates, controlled paraphrases, ambiguity transforms, and deterministic validators. Public datasets are source material for schema design, sanity checks, and held-out evaluation unless their license and provenance are explicitly admitted into the training manifest.
 
 ## Candidate public sources
 
@@ -25,7 +25,7 @@ The first full run will contain up to 1,000,000 individual decisions, approximat
 - deterministic legality checks for tool names and arguments;
 - teacher distributions retained as soft targets only when the validator accepts them.
 
-The dataset manifest will record generator version, schema hash, source attribution, license decision, split, and deduplication hash for every record.
+The dataset manifest records generator identity, schema hash, source attribution, license decision, split, and deduplication hash for every record.
 
 ## Split policy
 

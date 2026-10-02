@@ -1,6 +1,6 @@
 ---
 license: other
-license_name: tokenai-neo-model-license-v3.0
+license_name: tokenai-neo-model-license
 license_link: https://huggingface.co/tokenaii/Neo/blob/main/licenses/MODEL_LICENSE.md
 library_name: pytorch
 pipeline_tag: text-classification
@@ -80,17 +80,16 @@ and five distractors.
 The training run uses RLCD-inspired weighted soft-target training from scratch,
 20 epochs, approximately 15,640 optimizer steps, batch size 1024, bfloat16,
 learning rate `0.0002`, choice loss weight `8.0`, and score/noul weights `1.0`.
-The generator is identified as `neo-english-synthetic-v1` in the project
+The generator is identified as `neo-english-synthetic` in the project
 manifests. The final benchmark report is produced after training and is not
 claimed by this card until verified.
 
 ## Tokenizer
 
-Neo uses the standard English `bert-base-uncased` tokenizer and vocabulary. A
-custom tokenizer was not built for this release, so no custom tokenizer is
-claimed or published under `tokenizer/`. The Transformer parameters are Neo's
-own randomly initialized and trained weights; the tokenizer vocabulary is not
-the model architecture.
+Neo uses the standard English `bert-base-uncased` tokenizer and vocabulary,
+published under `tokenizer/` for repository organization. A custom tokenizer
+was not built. The Transformer parameters are Neo's own randomly initialized
+and trained weights; the tokenizer vocabulary is not the model architecture.
 
 ## Release status
 
@@ -107,12 +106,12 @@ the local evaluation artifacts are reviewed.
 - `licenses/NOTICE.md` — attribution and ownership notice.
 - `assets/neo-cover.png` — repository artwork.
 - `docs/MODEL_SPECIFICATION.md` — technical specification.
-- `tokenizer/` — reserved for a custom tokenizer only if one is actually built.
+- `tokenizer/` — standard English `bert-base-uncased` tokenizer files.
 - `training_config.json` — reproducibility metadata when a release includes it.
 
 ## License and attribution
 
-Use is governed by [the TokenAI Neo Model License v3.0](licenses/MODEL_LICENSE.md).
+Use is governed by [the TokenAI Neo Model License](licenses/MODEL_LICENSE.md).
 Redistribution, renaming, rebranding, white-labeling, Derivative Models,
 Commercial Use, and Financial Benefit are prohibited without written permission
 from TokenAI. Every permitted downstream report or model must state:

@@ -10,6 +10,7 @@ from pathlib import Path
 
 import torch
 from transformers import BertTokenizerFast
+from safetensors.torch import load_file
 
 from scripts.benchmark_neo import items
 from scripts.train_neo import NeoModel
@@ -26,7 +27,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tokenizer = BertTokenizerFast.from_pretrained(args.checkpoint)
     model = NeoModel(len(tokenizer)).to(device).eval()
-    model.load_state_dict(torch.load(args.checkpoint / "pytorch_model.bin", map_location=device))
+    model.load_state_dict(load_file(str(args.checkpoint / "model.safetensors"), device=device))
     sample = list(items(args.data))[:args.batch_size]
     encoded = tokenizer([row["text"] for row in sample], padding=True, truncation=True, max_length=256, return_tensors="pt")
     encoded = {key: value.to(device) for key, value in encoded.items()}

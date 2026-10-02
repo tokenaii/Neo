@@ -5,7 +5,7 @@
    intentionally paused for the handoff.
 3. Generate and validate the synthetic JSONL corpus.
 4. Record the manifest hash, generator seed, configuration hash, and runtime
-   versions.
+   revisions.
 5. Start training with checkpoints and append-only logs under `runs/` and
    `logs/`, preferably through `scripts/train_and_evaluate.sh`.
 6. Evaluate only after training: accuracy, NLL, Brier, ECE, selective

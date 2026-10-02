@@ -114,7 +114,7 @@ The model is a neural network with learned parameters, but its output space is d
 
 ## Data policy
 
-The first dataset will be synthetic and generated from versioned schemas, templates, tool descriptions, paraphrases, perturbations, and controlled ambiguity. Every record will retain provenance, generator version, schema hash, split, and validation status. External datasets will be added only after license review.
+The dataset is synthetic and generated from tracked schemas, templates, tool descriptions, paraphrases, perturbations, and controlled ambiguity. Every record retains provenance, generator identity, schema hash, split, and validation status. External datasets will be added only after license review.
 
 ## Server policy
 

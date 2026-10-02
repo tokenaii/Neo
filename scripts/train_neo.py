@@ -15,6 +15,7 @@ import torch
 from torch import nn
 from torch.utils.data import DataLoader, IterableDataset
 from transformers import BertConfig, BertModel, BertTokenizerFast
+from safetensors.torch import save_file
 
 
 def set_seed(seed: int) -> None:
@@ -189,9 +190,9 @@ def main():
             if step % 5000 == 0:
                 checkpoint = args.output / f"checkpoint-{step}"
                 checkpoint.mkdir(parents=True, exist_ok=True)
-                torch.save(model.state_dict(), checkpoint / "pytorch_model.bin")
+                save_file({key: value.detach().cpu().contiguous() for key, value in model.state_dict().items()}, str(checkpoint / "model.safetensors"))
                 tokenizer.save_pretrained(checkpoint)
-    torch.save(model.state_dict(), args.output / "pytorch_model.bin")
+    save_file({key: value.detach().cpu().contiguous() for key, value in model.state_dict().items()}, str(args.output / "model.safetensors"))
     tokenizer.save_pretrained(args.output)
     (args.output / "training_config.json").write_text(json.dumps(vars(args), default=str, indent=2), encoding="utf-8")
     print(json.dumps({"status": "completed", "steps": step, "output": str(args.output)}), flush=True)

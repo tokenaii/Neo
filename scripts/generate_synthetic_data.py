@@ -135,7 +135,7 @@ def make_record(index: int, seed: int) -> dict:
         "state": {"language": language, "text": state, "available_tools": names},
         "questions": questions,
         "labels": labels,
-        "metadata": {"generator": "neo-english-synthetic-v1", "seed": seed, "source": "generated"},
+        "metadata": {"generator": "neo-english-synthetic", "seed": seed, "source": "generated"},
     }
 
 
@@ -162,7 +162,7 @@ def main() -> None:
             counts[split] += len(record["labels"])
             handle.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
     manifest = {
-        "generator": "neo-english-synthetic-v1",
+        "generator": "neo-english-synthetic",
         "records": len(records),
         "decisions": counts,
         "total_decisions": sum(counts.values()),
