@@ -63,7 +63,8 @@ def predict(model, tokenizer, data, device, batch_size=128, temperature=1.0):
                 size = 2 if row["kind"] == "noul" else len(row["options"])
                 values = (logits[i, :size].float() / temperature).cpu()
                 probs = torch.softmax(values, dim=-1).tolist()
-                output.append({**row, "probs": probs, "prediction": max(range(size), key=probs.__getitem__),
+                output.append({**row, "logits": values.tolist(), "probs": probs,
+                               "prediction": max(range(size), key=probs.__getitem__),
                                "confidence": max(probs)})
     return output
 
@@ -124,10 +125,18 @@ def main():
     model.load_state_dict(load_file(str(args.checkpoint / "model.safetensors"), device=device))
     calibration = list(rows(args.data, "calibration"))
     test = list(rows(args.data, "test"))
+    raw_calibration = predict(model, tokenizer, calibration, device, args.batch_size)
     raw = predict(model, tokenizer, test, device, args.batch_size)
     by_kind = {kind: metrics([x for x in raw if x["kind"] == kind]) for kind in ("choice", "score", "noul")}
     temps = [0.50 + i * 0.01 for i in range(251)]
-    best_t = min(temps, key=lambda t: sum(-math.log(max(x["probs"][x["target"]], 1e-12)) for x in predict(model, tokenizer, calibration, device, args.batch_size, t)))
+    def calibration_nll(t):
+        total = 0.0
+        for x in raw_calibration:
+            m = max(x["logits"])
+            denom = sum(math.exp((z - m) / t) for z in x["logits"])
+            total -= math.log(max(math.exp((x["logits"][x["target"]] - m) / t) / denom, 1e-12))
+        return total
+    best_t = min(temps, key=calibration_nll)
     calibrated = predict(model, tokenizer, test, device, args.batch_size, best_t)
     choice = [x for x in raw if x["kind"] == "choice"]
     tool = {"n": len(choice), "accuracy": sum(x["prediction"] == x["target"] for x in choice) / len(choice),
