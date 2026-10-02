@@ -6,6 +6,19 @@ TokenAI is a non-profit startup founded in 2025 by Assem Sabry, based in Alexand
 source code, training data, documentation, and related project materials are
 owned by TokenAI. Contact: info@tokenai.llc · https://tokenai.llc
 
+## Official repositories
+
+- [Model repository on Hugging Face](https://huggingface.co/tokenaii/Neo) —
+  published model artifacts, tokenizer files, model documentation, technical
+  specifications, and legal notices.
+- [Dataset repository on Hugging Face](https://huggingface.co/datasets/tokenaii/Neo-dataset)
+  — the complete English synthetic training and evaluation dataset, organized
+  data shards, manifest, provenance, and dataset legal files.
+- [Complete source repository on GitHub](https://github.com/tokenaii/Neo) —
+  the complete project source code, training code, data-generation code,
+  evaluation and benchmark scripts, configurations, examples, documentation,
+  licenses, and reproducibility materials.
+
 Neo is a **System One Model**: a probabilistic decision model that reads an application state and answers typed questions without generating free-form text.
 
 ## Training Method: RLCD

@@ -36,6 +36,11 @@ Canonical model: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
 
 Training dataset: `tokenaii/Neo-dataset` — https://huggingface.co/datasets/tokenaii/Neo-dataset
 
+Complete source repository: [github.com/tokenaii/Neo](https://github.com/tokenaii/Neo).
+It contains the complete project source code, training code, synthetic-data
+generation code, evaluation and benchmark scripts, configurations, examples,
+documentation, licenses, and reproducibility materials.
+
 ## Model architecture
 
 - Bidirectional Transformer encoder, initialized and trained from scratch.

@@ -24,6 +24,13 @@ Contact: info@tokenai.llc · https://tokenai.llc
 
 Canonical reference: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
 
+Complete source repository: [github.com/tokenaii/Neo](https://github.com/tokenaii/Neo).
+It contains the complete project source code, training code, synthetic-data
+generation code, evaluation and benchmark scripts, configurations, examples,
+documentation, licenses, and reproducibility materials. This repository
+contains the dataset files, manifest, provenance information, and dataset legal
+notices.
+
 Synthetic, schema-driven decision records for training and evaluating Neo, a System One decision model.
 
 ## Contents
