@@ -2,12 +2,13 @@ project: neo
 version: v0.1
 model:
   architecture: compact_bidirectional_transformer_encoder
-  parameters_target: 140000000
+  parameters_target: 110000000
   layers: 8
   hidden_size: 512
   attention_heads: 8
   intermediate_size: 2048
   max_sequence_length: 1024
+  tokenizer: bert-base-uncased
   dropout: 0.1
   decision_types: [choice, score, noul]
   max_questions_per_request: 8
@@ -27,9 +28,10 @@ training:
     test: 0.1
   precision: bf16
   gradient_checkpointing: true
-  seed: 20261002
+  seed: 20261003
 data:
-  languages: [en, ar, ar-eg]
+  languages: [en]
+  language_policy: English-only
   tool_count_target: 20
   include_unknowable_cases: true
   include_option_permutation: true

@@ -31,6 +31,12 @@ Training method: RLCD-inspired soft-target training from scratch on synthetic
 decision records. See the project repository for code, manifests, run logs,
 and evaluation protocols.
 
+Language: English only. The released model and training corpus are not
+intended to support Arabic or multilingual inference.
+
+The English-only release uses an English BERT tokenizer and a randomly
+initialized bidirectional Transformer encoder with typed decision heads.
+
 The model must remain identified as **TokenAI Neo** and must keep the canonical
 reference `tokenaii/neo`. Rebranding, renaming, white-labeling, redistributing,
 or publishing a copy or derivative checkpoint under another identity is

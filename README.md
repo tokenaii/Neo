@@ -46,7 +46,7 @@ One request may contain multiple independent questions. All questions share the 
 ### Phase 1 — Neo-0.1 from-scratch prototype
 
 - Architecture: compact bidirectional Transformer encoder with question-conditioned decision heads.
-- Target size: 110M–180M learned parameters.
+- Target size: approximately 110M learned parameters with an English tokenizer.
 - Context: 1,024 tokens.
 - Decision labels: up to 1,000,000 individual decisions for the first full run.
 - Records: approximately 350,000–450,000 states, with multiple questions per state where useful.
@@ -54,7 +54,7 @@ One request may contain multiple independent questions. All questions share the 
 - Choice: up to 32 options.
 - Score: 3–5 ordered levels.
 - Noul: binary probability.
-- Languages: English plus Modern Standard Arabic and Egyptian Arabic examples.
+- Language: English only.
 
 ### Phase 2 — RLCD calibration and robustness
 
@@ -75,7 +75,7 @@ Neo must be tested on:
 - known decision families;
 - unseen combinations of state and question wording;
 - unseen tools and option names;
-- Arabic and Egyptian Arabic;
+- English-only prompts and labels;
 - reordered options;
 - ambiguous and unknowable states;
 - multi-question requests;

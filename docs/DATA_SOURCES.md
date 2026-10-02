@@ -11,7 +11,6 @@ Neo's first RLCD run will use a synthetic training corpus generated from version
 | `lockon/ToolACE` | 11,300 synthetic multi-turn tool-use conversations; Apache-2.0 card | Tool taxonomy, conversation patterns, evaluation seed | Admitted for inspection; do not copy rows into training without manifest review |
 | `Salesforce/xlam-function-calling-60k` | 60,000 single-turn function-calling examples; gated source, CC-BY-4.0 | Function/tool schema coverage and optional licensed evaluation | Requires access and attribution review |
 | `PolyAI/banking77` | 77 English intent classes; CC-BY-4.0 | Intent-routing benchmark and label-shape reference | Evaluation/seed only |
-| `ptrdvn/kakugo-arz` | 41,902 synthetic Egyptian-Arabic records | Arabic wording study and possible evaluation seed | License/provenance review required |
 
 ## Neo-generated training corpus
 
@@ -20,7 +19,7 @@ The first full run will contain up to 1,000,000 individual decisions, approximat
 - 350,000–450,000 synthetic states;
 - 20-tool catalogs plus distractor tools;
 - Choice, Score, and Noul in balanced proportions;
-- English, Modern Standard Arabic, and Egyptian Arabic;
+- English-only state text, question wording, labels, and tool descriptions;
 - direct, paraphrased, ambiguous, contradictory, and unknowable states;
 - option-order permutations and question paraphrases;
 - deterministic legality checks for tool names and arguments;
@@ -34,7 +33,7 @@ The dataset manifest will record generator version, schema hash, source attribut
 - 100,000 decisions: calibration only.
 - 100,000 decisions: final test only.
 
-The final test includes unseen tool names, unseen tool combinations, Arabic variants, reordered options, and unknowable cases. No calibration temperature or threshold may be fitted on the final test.
+The final test includes unseen tool names, unseen tool combinations, reordered options, and unknowable cases. No calibration temperature or threshold may be fitted on the final test.
 
 ## Why not train directly on every public row?
 

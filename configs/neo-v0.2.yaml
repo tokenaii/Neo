@@ -2,12 +2,13 @@ project: neo
 version: v0.2
 model:
   architecture: compact_bidirectional_transformer_encoder
-  parameters: 140000000
+  parameters: 110000000
   layers: 8
   hidden_size: 512
   attention_heads: 8
   intermediate_size: 2048
   max_sequence_length: 1024
+  tokenizer: bert-base-uncased
   decision_types: [choice, score, noul]
   max_choice_options: 32
 training:
@@ -23,6 +24,9 @@ training:
   split: {train: 0.8, calibration: 0.1, test: 0.1}
   precision: bf16
   seed: 20261003
+data:
+  languages: [en]
+  language_policy: English-only
 focus:
   - tool and action selection
   - held-out option combinations
