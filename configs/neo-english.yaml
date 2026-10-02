@@ -1,0 +1,31 @@
+project: neo
+language: en
+architecture: compact_bidirectional_transformer_encoder
+parameters: 110000000
+layers: 8
+hidden_size: 512
+attention_heads: 8
+intermediate_size: 2048
+max_sequence_length: 1024
+tokenizer: bert-base-uncased
+decision_types: [choice, score, noul]
+max_choice_options: 32
+training:
+  method: RLCD-inspired weighted soft-target training
+  from_scratch: true
+  epochs: 20
+  expected_optimizer_steps: 15640
+  learning_rate: 0.0002
+  batch_size: 1024
+  choice_loss_weight: 8.0
+  score_loss_weight: 1.0
+  noul_loss_weight: 1.0
+  decisions_per_epoch: 799882
+  total_decisions_seen: 15997640
+  split: {train: 0.8, calibration: 0.1, test: 0.1}
+  precision: bf16
+focus:
+  - English-only tool and action selection
+  - held-out option combinations
+  - calibrated abstention when confidence is low
+  - automatic post-training evaluation
