@@ -59,7 +59,8 @@ training source.
 - `calibration`: 100,138 decisions
 - `test`: 99,980 decisions
 
-The calibration split is reserved for probability calibration. The test split must not be used to select checkpoints, thresholds, or temperature.
+The calibration split is reserved for probability calibration. The test split
+is reserved for final evaluation and must not be used for fitting.
 
 ## Intended use and limitations
 

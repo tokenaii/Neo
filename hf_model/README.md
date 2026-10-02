@@ -75,19 +75,16 @@ unsupervised medical, legal, financial, employment, housing, admissions,
 insurance, credit, safety-critical, government-benefit, law-enforcement, or
 irreversible decisions.
 
-## Training data and procedure
+## Training records
 
-The English-only corpus contains 400,000 synthetic records and 1,000,000
-independent decisions: 799,882 training, 100,138 calibration, and 99,980 test
-decisions. The catalog contains 20 tools; records commonly present one target
-and five distractors.
+Training code, configurations, live logs, loss history, checkpoints metadata,
+evaluation reports, and benchmark history are maintained only in the GitHub
+source repository:
 
-The training run uses RLCD-inspired weighted soft-target training from scratch,
-20 epochs, approximately 15,640 optimizer steps, batch size 1024, bfloat16,
-learning rate `0.0002`, choice loss weight `8.0`, and score/noul weights `1.0`.
-The generator is identified as `neo-english-synthetic` in the project
-manifests. The final benchmark report is produced after training and is not
-claimed by this card until verified.
+https://github.com/tokenaii/Neo/tree/main/docs/training
+
+This Hugging Face model repository does not publish the training history or
+benchmark archive.
 
 ## Tokenizer
 
@@ -100,10 +97,9 @@ and trained weights; the tokenizer vocabulary is not the model architecture.
 
 The previous model weights were removed from this repository before the final
 English-only training release. The current repository contains documentation,
-configuration, tokenizer metadata, and licenses while the English training and
-automatic evaluation pipeline complete. Do not infer benchmark accuracy from
-the architecture or data counts. Verified results will be published only after
-the local evaluation artifacts are reviewed.
+documentation, tokenizer metadata, and licenses. Do not infer benchmark
+accuracy from the architecture or data counts. Training and benchmark records
+are maintained only in the GitHub source repository.
 
 ## Repository layout
 
@@ -112,7 +108,6 @@ the local evaluation artifacts are reviewed.
 - `assets/neo-cover.png` — repository artwork.
 - `docs/MODEL_SPECIFICATION.md` — technical specification.
 - `tokenizer/` — standard English `bert-base-uncased` tokenizer files.
-- `training_config.json` — reproducibility metadata when a release includes it.
 
 ## License and attribution
 
