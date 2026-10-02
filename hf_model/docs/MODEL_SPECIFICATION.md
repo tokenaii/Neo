@@ -3,7 +3,7 @@
 Neo is an English-only System One decision model.
 
 - Bidirectional Transformer encoder.
-- Approximately 110M parameters.
+- 41,391,654 trainable parameters (approximately 41.4M).
 - 8 layers, hidden size 512, 8 attention heads.
 - Intermediate size 2048.
 - Maximum context 1,024 tokens.

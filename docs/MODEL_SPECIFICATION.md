@@ -7,7 +7,7 @@ decision model and its English-only training run.
 
 - Category: System One decision model.
 - Architecture: bidirectional Transformer encoder.
-- Approximate parameters: 110 million.
+- Trainable parameters: 41,391,654 (approximately 41.4 million).
 - Transformer layers: 8.
 - Hidden size: 512.
 - Attention heads: 8.

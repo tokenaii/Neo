@@ -1,7 +1,7 @@
 project: neo
 language: en
 architecture: compact_bidirectional_transformer_encoder
-parameters: 110000000
+parameters: 41391654
 layers: 8
 hidden_size: 512
 attention_heads: 8

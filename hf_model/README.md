@@ -44,7 +44,7 @@ documentation, licenses, and reproducibility materials.
 ## Model architecture
 
 - Bidirectional Transformer encoder, initialized and trained from scratch.
-- Approximately 110 million parameters.
+- 41,391,654 trainable parameters (approximately 41.4 million).
 - 8 Transformer layers; hidden size 512; 8 attention heads.
 - Intermediate size 2048; maximum context 1024 tokens.
 - Typed heads: `choice`, `score`, and `noul`.

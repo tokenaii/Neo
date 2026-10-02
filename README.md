@@ -71,7 +71,7 @@ One request may contain multiple independent questions. All questions share the 
 ### Phase 1 — English from-scratch release
 
 - Architecture: compact bidirectional Transformer encoder with question-conditioned decision heads.
-- Target size: approximately 110M learned parameters with an English tokenizer.
+- Learned parameter count: 41,391,654 (approximately 41.4M) with an English tokenizer.
 - Context: 1,024 tokens.
 - Decision labels: up to 1,000,000 individual decisions for the first full run.
 - Records: approximately 350,000–450,000 states, with multiple questions per state where useful.
