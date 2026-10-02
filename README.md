@@ -2,9 +2,9 @@
 
 <p align="center"><img src="assets/neo-cover.png" alt="NEO" width="360"></p>
 
-TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The Neo model,
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry, based in Alexandria, Egypt. The Neo model,
 source code, training data, documentation, and related project materials are
-owned by TokenAI. Contact: info@tokenaia.llc · https://tokenai.llc
+owned by TokenAI. Contact: info@tokenai.llc · https://tokenai.llc
 
 Neo is a **System One Model**: a probabilistic decision model that reads an application state and answers typed questions without generating free-form text.
 
@@ -47,7 +47,7 @@ One request may contain multiple independent questions. All questions share the 
 - Use 80% training, 10% calibration, and 10% test splits.
 - No GPU or production-service changes.
 
-### Phase 1 — Neo-0.1 from-scratch prototype
+### Phase 1 — English from-scratch release
 
 - Architecture: compact bidirectional Transformer encoder with question-conditioned decision heads.
 - Target size: approximately 110M learned parameters with an English tokenizer.

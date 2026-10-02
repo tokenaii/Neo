@@ -1,6 +1,6 @@
 ---
 license: other
-license_name: tokenai-neo-dataset-license-v2.0
+license_name: tokenai-neo-dataset-license-v3.0
 license_link: https://huggingface.co/datasets/tokenaii/Neo-dataset/blob/main/DATASET_LICENSE.md
 language:
 - en
@@ -18,9 +18,9 @@ tags:
 
 <p align="center"><img src="neo-cover.png" alt="NEO - Decision Model Dataset" width="360"></p>
 
-TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The dataset,
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry, based in Alexandria, Egypt. The dataset,
 model, source code, documentation, and related materials are owned by TokenAI.
-Contact: info@tokenaia.llc · https://tokenai.llc
+Contact: info@tokenai.llc · https://tokenai.llc
 
 Canonical reference: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
 
@@ -55,7 +55,7 @@ This dataset is a research corpus for typed decision models. It is not a substit
 
 ## Identity and license
 
-This dataset must remain identified as the **TokenAI Neo Dataset** and must
+This dataset must remain identified as the **TokenAI Neo Decision Model Dataset** and must
 retain the canonical reference `tokenaii/Neo`. Rebranding, renaming,
 white-labeling, redistributing, rehosting, or publishing it under another
 identity is prohibited. The dataset must not be used without preserving its

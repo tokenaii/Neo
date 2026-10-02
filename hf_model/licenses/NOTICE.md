@@ -6,6 +6,9 @@ Canonical model: `tokenaii/Neo`
 
 Training dataset: `tokenaii/Neo-dataset`
 
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry, based in Alexandria, Egypt.
+Contact: info@tokenai.llc · https://tokenai.llc
+
 This model may not be rebranded, renamed, white-labeled, redistributed, or
 used commercially. Any permitted use must preserve the full official name and
 state that the model was trained using `tokenaii/Neo-dataset`.

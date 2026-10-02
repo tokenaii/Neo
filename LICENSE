@@ -1,45 +1,61 @@
-TokenAI Neo Project License v2.0 — Non-Commercial / No-Rebranding
+TokenAI Neo Project License v3.0 — Non-Commercial / No-Rebranding
 
 Copyright (c) 2026 TokenAI / Assem Sabry.
+
+TokenAI is a non-profit startup founded in 2025 by Assem Sabry, based in
+Alexandria, Egypt. Contact: info@tokenai.llc. Website: https://tokenai.llc.
 
 This license applies to Neo source code, training code, scripts, configuration,
 documentation, examples, and project materials unless a file states otherwise.
 
-Permission is granted only for personal, private, non-commercial educational,
-academic, and non-profit research use. Commercial, monetized, paid,
-revenue-generating, sponsored, advertising-supported, client, production,
-business, resale, or financially beneficial use is prohibited.
+## Permission and definitions
 
-The exact official identity must remain visible:
+Permission is limited to personal, private, non-commercial educational,
+academic, and non-profit research use. **Commercial Use** includes any paid,
+for-profit, client, employment, production-business, advertising, sponsored,
+resale, or business-advantage use. **Financial Benefit** includes revenue,
+fees, salary, commission, donations, investment value, cost savings, or other
+direct or indirect economic value. **Derivative Model** includes any model or
+checkpoint fine-tuned, merged, distilled, quantized, converted, adapted, or
+otherwise materially derived from Neo or its dataset.
 
-**TokenAI Neo — Decision Model**
+No Commercial Use or Financial Benefit is permitted. Neo must remain identified
+as **TokenAI Neo — Decision Model** and referenced as `tokenaii/Neo`.
 
-Canonical references must remain visible:
+## Attribution and restrictions
 
-- Model: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
-- Dataset: `tokenaii/Neo-dataset` —
-  https://huggingface.co/datasets/tokenaii/Neo-dataset
-
-Any work using the training code or data must state:
+The canonical dataset reference is `tokenaii/Neo-dataset`. Any work using the
+training code or data must state:
 
 > This work was trained using the TokenAI Neo Decision Model Dataset,
 > `tokenaii/Neo-dataset`, owned by TokenAI.
 
 Without prior written permission from TokenAI, no one may redistribute,
 rehost, mirror, sublicense, sell, publish, white-label, rename, rebrand, fork
-under another identity, or present Neo or a substantial project copy as another
-person's or organization's work.
+under another identity, publish a Derivative Model, or remove attribution,
+provenance, notices, or license terms. TokenAI and Neo trademarks may be used
+only for factual attribution; no endorsement, brand, domain, or co-branding
+rights are granted.
 
-Copyright, license, attribution, provenance, official-name, and canonical
-reference notices must remain intact. Modifying source code does not grant
-permission for commercial use or for distributing model weights or dataset
-copies.
+Requests must be sent to **info@tokenai.llc** and are valid only when approved
+in writing by an authorized TokenAI representative.
 
-Any breach automatically terminates permission. All use must stop and copies
-must be removed after termination.
+## Legal terms
 
-THE MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. TOKENAI IS
-NOT LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING FROM USE.
+TokenAI may issue written notice-and-takedown requests. The recipient must stop
+the disputed use, remove or disable access within five business days, preserve
+evidence, and confirm correction. A counter-notice does not authorize continued
+Commercial Use. No patent license is granted. Contributions require an invited
+CLA, and all contributors must disclose third-party material and grant TokenAI
+the rights stated in that CLA. Users must review dependencies and preserve
+upstream licenses and notices; third-party material is not relicensed here.
 
-THIS CUSTOM LICENSE IS NOT LEGAL ADVICE AND MUST BE REVIEWED BY QUALIFIED
-COUNSEL BEFORE ENFORCEMENT.
+Any breach terminates permission. If a provision is invalid, it is severed only
+as necessary and the rest remains effective. This license and linked notices
+are the entire agreement for these project materials. Revised terms apply to
+future releases; no retroactive expansion or removal of restrictions occurs
+without written agreement.
+
+THE MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THIS CUSTOM
+LICENSE IS NOT LEGAL ADVICE AND SHOULD BE REVIEWED BY QUALIFIED COUNSEL BEFORE
+ENFORCEMENT.
