@@ -95,11 +95,11 @@ and trained weights; the tokenizer vocabulary is not the model architecture.
 
 ## Release status
 
-The previous model weights were removed from this repository before the final
-English-only training release. The current repository contains documentation,
-documentation, tokenizer metadata, and licenses. Do not infer benchmark
-accuracy from the architecture or data counts. Training and benchmark records
-are maintained only in the GitHub source repository.
+The English-only training run is complete and the verified
+`model.safetensors` checkpoint is published in this repository. Training logs,
+loss history, evaluation reports, and benchmark records remain exclusively in
+the GitHub source repository. Do not infer benchmark accuracy from the
+architecture or data counts.
 
 ## Repository layout
 
@@ -107,6 +107,7 @@ are maintained only in the GitHub source repository.
 - `licenses/NOTICE.md` — attribution and ownership notice.
 - `assets/neo-cover.png` — repository artwork.
 - `docs/MODEL_SPECIFICATION.md` — technical specification.
+- `model.safetensors` — verified model weights.
 - `tokenizer/` — standard English `bert-base-uncased` tokenizer files.
 
 ## License and attribution
