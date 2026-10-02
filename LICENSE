@@ -8,6 +8,21 @@ Alexandria, Egypt. Contact: info@tokenai.llc. Website: https://tokenai.llc.
 This license applies to Neo source code, training code, scripts, configuration,
 documentation, examples, and project materials unless a file states otherwise.
 
+## Entire Agreement and acceptance
+
+This license and the files expressly referred to in it constitute the complete
+agreement between TokenAI and every person or organization that accesses,
+downloads, copies, studies, modifies, or uses these project materials. By doing
+any of those acts, the user acknowledges that they have read and accepted this
+agreement, its conditions, its attribution duties, its restrictions, and the
+consequences of breach.
+
+Earlier instructions, posts, announcements, examples, or informal statements
+do not override this license. Any exception or additional permission must be in
+a written instrument confirmed by an authorized TokenAI representative.
+Licenses governing external dependencies remain separate and continue to apply
+to those dependencies.
+
 ## Permission and definitions
 
 Permission is limited to personal, private, non-commercial educational,
@@ -42,19 +57,31 @@ in writing by an authorized TokenAI representative.
 
 ## Legal terms
 
-TokenAI may issue written notice-and-takedown requests. The recipient must stop
-the disputed use, remove or disable access within five business days, preserve
-evidence, and confirm correction. A counter-notice does not authorize continued
-Commercial Use. No patent license is granted. Contributions require an invited
-CLA, and all contributors must disclose third-party material and grant TokenAI
-the rights stated in that CLA. Users must review dependencies and preserve
-upstream licenses and notices; third-party material is not relicensed here.
+TokenAI may issue a written notice-and-takedown request identifying the material
+or URL, the type of alleged violation, the specific license term or legal right
+that was breached, and a contact method or signature of the rights holder or its
+authorized representative. The recipient must stop the disputed use, remove or
+disable access within five business days, preserve relevant evidence and
+records, and confirm completion of the removal or access block. A
+counter-notice does not authorize continued Commercial Use. Urgent or repeated
+breaches may require immediate removal and termination.
 
-Any breach terminates permission. If a provision is invalid, it is severed only
-as necessary and the rest remains effective. This license and linked notices
-are the entire agreement for these project materials. Revised terms apply to
-future releases; no retroactive expansion or removal of restrictions occurs
-without written agreement.
+No patent license is granted. Contributions require an invited CLA, and all
+contributors must disclose third-party material and grant TokenAI the rights
+stated in that CLA. Users must review dependencies and preserve upstream
+licenses and notices; third-party material is not relicensed here.
+
+Any breach terminates permission. If a provision is invalid or unenforceable,
+it is limited or severed only as necessary and the rest remains effective. The
+parties agree that the original intent should be preserved as far as legally
+possible.
+
+TokenAI may amend the terms that accompany future code, documentation, or
+publications. Materials already received remain governed by the terms supplied
+with them unless a written permission or written amendment confirmed by the
+affected user states otherwise. No amendment retroactively expands a
+recipient's rights or removes an existing restriction without written
+agreement.
 
 THE MATERIALS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THIS CUSTOM
 LICENSE IS NOT LEGAL ADVICE AND SHOULD BE REVIEWED BY QUALIFIED COUNSEL BEFORE
