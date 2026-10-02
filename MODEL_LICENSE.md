@@ -8,13 +8,13 @@ info@tokenaia.llc. Website: https://tokenai.llc.
 The model weights, configuration, tokenizer files, calibration artifacts, and
 model-specific files published at:
 
-https://huggingface.co/tokenaii/neo
+https://huggingface.co/tokenaii/Neo
 
 may be downloaded and used for personal, academic, internal, research, and
 commercial inference, subject to all of the following conditions:
 
 1. The model must be identified as TokenAI Neo and must reference the primary
-   model repository `tokenaii/neo`.
+   model repository `tokenaii/Neo`.
 2. The weights and any fine-tuned or merged derivative weights may not be
    redistributed, rehosted, sublicensed, sold, mirrored, or published for
    download without prior written permission from TokenAI.

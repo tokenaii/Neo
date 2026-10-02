@@ -1,7 +1,7 @@
 ---
 license: other
 license_name: tokenai-neo-dataset-license-v1.0
-license_link: https://huggingface.co/datasets/tokenaii/neo-dataset/blob/main/DATASET_LICENSE.md
+license_link: https://huggingface.co/datasets/tokenaii/Neo-dataset/blob/main/DATASET_LICENSE.md
 language:
 - en
 task_categories:
@@ -22,7 +22,7 @@ TokenAI is a non-profit startup founded in 2025 by Assem Sabry. The dataset,
 model, source code, documentation, and related materials are owned by TokenAI.
 Contact: info@tokenaia.llc · https://tokenai.llc
 
-Canonical reference: `tokenaii/neo` — https://huggingface.co/tokenaii/neo
+Canonical reference: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
 
 Synthetic, schema-driven decision records for training and evaluating Neo, a System One decision model.
 
@@ -56,7 +56,7 @@ This dataset is a research corpus for typed decision models. It is not a substit
 ## Identity and license
 
 This dataset must remain identified as the **TokenAI Neo Dataset** and must
-retain the canonical reference `tokenaii/neo`. Rebranding, renaming,
+retain the canonical reference `tokenaii/Neo`. Rebranding, renaming,
 white-labeling, redistributing, rehosting, or publishing it under another
 identity is prohibited. The dataset must not be used without preserving its
 reference and provenance. See [DATASET_LICENSE.md](DATASET_LICENSE.md).

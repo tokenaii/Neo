@@ -10,7 +10,7 @@ Neo is a **System One Model**: a probabilistic decision model that reads an appl
 
 ## Training Method: RLCD
 
-Neo will use **Reinforcement Learning for Calibrated Decisions (RLCD)** as its primary training method. The initial plan is a from-scratch, synthetic-data-first decision model rather than customer-specific fine-tuning or LoRA adapters.
+Neo uses **Reinforcement Learning for Calibrated Decisions (RLCD)** as its primary training method. The current English-only run is trained from scratch on synthetic decision records rather than customer-specific fine-tuning or LoRA adapters.
 
 RLCD is treated as a training objective and data-generation loop, not as a claim that Neo reproduces TypeSafe AI's private implementation. TypeSafe AI's Jev architecture, sampler, data, and exact RLCD recipe are not public. Neo will use an independently reproducible design with documented assumptions.
 
@@ -18,7 +18,7 @@ RLCD is treated as a training objective and data-generation loop, not as a claim
 
 Neo belongs to the **System One Models** category. It returns typed decisions and calibrated probabilities for software to consume directly. It is not a conversational text-generation model.
 
-Neo must remain identified as **TokenAI Neo** and referenced as `tokenaii/neo`.
+Neo must remain identified as **TokenAI Neo** and referenced as `tokenaii/Neo`.
 Rebranding, renaming, white-labeling, or publishing a copy under another
 identity is prohibited. The same attribution requirement applies to the
 dataset and every derived product that uses it. See [MODEL_LICENSE.md](MODEL_LICENSE.md)
@@ -26,11 +26,15 @@ and [DATASET_LICENSE.md](DATASET_LICENSE.md).
 
 ## Decision interface
 
-Neo v0.1 will support three decision primitives:
+Neo supports three decision primitives:
 
 - `choice`: select one option from a declared set.
 - `score`: place the state on an ordered rubric.
 - `noul`: estimate the probability that a declared proposition is true.
+
+The complete technical specification is documented in
+[docs/MODEL_SPECIFICATION.md](docs/MODEL_SPECIFICATION.md), and the active
+English-only training configuration is [configs/neo-english.yaml](configs/neo-english.yaml).
 
 One request may contain multiple independent questions. All questions share the encoded state and are answered in one forward pass.
 

@@ -14,6 +14,6 @@
 8. Verify checkpoint hashes and model-card provenance. The automatic post-run
    stage writes benchmark, latency, and tool-router smoke-test artifacts; do
    not publish those artifacts without approval.
-9. Upload the model to `tokenaii/neo` with `MODEL_LICENSE.md` and the canonical
-   `tokenaii/neo` reference.
+9. Upload the model to `tokenaii/Neo` with `MODEL_LICENSE.md` and the canonical
+   `tokenaii/Neo` reference.
 10. Restore H-Preview and its watchdog after Neo's GPU workload is stopped.

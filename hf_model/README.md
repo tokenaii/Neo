@@ -1,7 +1,7 @@
 ---
 license: other
 license_name: tokenai-neo-model-license-v1.0
-license_link: https://huggingface.co/tokenaii/neo/blob/main/MODEL_LICENSE.md
+license_link: https://huggingface.co/tokenaii/Neo/blob/main/MODEL_LICENSE.md
 library_name: pytorch
 tags:
 - system-one
@@ -23,9 +23,9 @@ declared decision schema and returns typed probabilities for `choice`, `score`,
 and `noul` questions in one forward pass. It does not generate free-form
 conversation text.
 
-Canonical reference: `tokenaii/neo` — https://huggingface.co/tokenaii/neo
+Canonical reference: `tokenaii/Neo` — https://huggingface.co/tokenaii/Neo
 
-Dataset: https://huggingface.co/datasets/tokenaii/neo-dataset
+Dataset: https://huggingface.co/datasets/tokenaii/Neo-dataset
 
 Training method: RLCD-inspired soft-target training from scratch on synthetic
 decision records. See the project repository for code, manifests, run logs,
@@ -38,16 +38,16 @@ The English-only release uses an English BERT tokenizer and a randomly
 initialized bidirectional Transformer encoder with typed decision heads.
 
 The model must remain identified as **TokenAI Neo** and must keep the canonical
-reference `tokenaii/neo`. Rebranding, renaming, white-labeling, redistributing,
+reference `tokenaii/Neo`. Rebranding, renaming, white-labeling, redistributing,
 or publishing a copy or derivative checkpoint under another identity is
-prohibited. Do not use the dataset without preserving its `tokenaii/neo`
+prohibited. Do not use the dataset without preserving its `tokenaii/Neo`
 reference. All use is subject to [MODEL_LICENSE.md](MODEL_LICENSE.md).
 
 ## License
 
 This model is released under the TokenAI Neo Model License v1.0. Do not
 redistribute, rebrand, rename, or publish a derivative checkpoint without
-written permission from TokenAI. Keep the `tokenaii/neo` reference visible.
+written permission from TokenAI. Keep the `tokenaii/Neo` reference visible.
 
 The model is not certified for medical, legal, financial, safety-critical, or
 autonomous decisions without independent validation and human oversight.

@@ -10,8 +10,8 @@ Permission is granted to use, run, study, test, and modify these materials for
 personal, academic, internal, and commercial use, provided that:
 
 1. The primary reference remains TokenAI Neo:
-   https://huggingface.co/tokenaii/neo
-2. The name "TokenAI Neo" and the `tokenaii/neo` reference are not removed,
+   https://huggingface.co/tokenaii/Neo
+2. The name "TokenAI Neo" and the `tokenaii/Neo` reference are not removed,
    hidden, or replaced when these materials are used or modified.
 3. No modified or unmodified copy of this repository may be redistributed,
    rehosted, sublicensed, sold, or published as a separate download without
@@ -23,7 +23,7 @@ personal, academic, internal, and commercial use, provided that:
 Any distribution, hosted service that exposes the materials or weights for
 download, or publication of a derivative checkpoint requires prior written
 permission from TokenAI and must preserve the primary reference to
-`tokenaii/neo`.
+`tokenaii/Neo`.
 
 THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. TOKENAI IS
 NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF

@@ -11,4 +11,4 @@ the current message and the tools currently available. Neo chooses one tool or
 This example is a routing layer, not an autonomous permission system. The
 application must still validate tool arguments and authorization.
 
-Canonical model reference: https://huggingface.co/tokenaii/neo
+Canonical model reference: https://huggingface.co/tokenaii/Neo

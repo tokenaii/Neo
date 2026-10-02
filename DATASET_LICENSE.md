@@ -7,13 +7,13 @@ info@tokenaia.llc. Website: https://tokenai.llc.
 
 The synthetic dataset published at:
 
-https://huggingface.co/datasets/tokenaii/neo-dataset
+https://huggingface.co/datasets/tokenaii/Neo-dataset
 
 may be downloaded and used for personal, academic, internal, research, and
 commercial work, subject to these conditions:
 
 1. Every use must identify the dataset as the TokenAI Neo Dataset and include
-   the primary reference `tokenaii/neo`.
+   the primary reference `tokenaii/Neo`.
 2. The dataset, any unchanged copy, and any substantially equivalent export
    may not be redistributed, rehosted, mirrored, sublicensed, sold, or
    published for download without prior written permission from TokenAI.

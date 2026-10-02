@@ -2,8 +2,8 @@
 
 The canonical project reference is:
 
-- Model: https://huggingface.co/tokenaii/neo
-- Dataset: https://huggingface.co/datasets/tokenaii/neo-dataset
+- Model: https://huggingface.co/tokenaii/Neo
+- Dataset: https://huggingface.co/datasets/tokenaii/Neo-dataset
 - Source repository: this Neo project repository
 
 Neo is a TokenAI project by Assem Sabry. Do not remove this notice, rename the

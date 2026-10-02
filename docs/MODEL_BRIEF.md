@@ -7,4 +7,4 @@ conversation or free-form explanation; it provides a calibrated signal that
 software can use for routing, tool selection, safety gates, escalation, and
 human review.
 
-Canonical model reference: https://huggingface.co/tokenaii/neo
+Canonical model reference: https://huggingface.co/tokenaii/Neo
