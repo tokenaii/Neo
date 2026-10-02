@@ -119,7 +119,7 @@ class NeoModel(nn.Module):
 
 
 def collate(batch, tokenizer, max_length):
-    encoded = tokenizer([item["text"] for item in batch], padding=True, truncation=True, max_length=max_length, return_tensors="pt")
+    encoded = tokenizer([item["text"] for item in batch], padding="max_length", truncation=True, max_length=max_length, return_tensors="pt")
     return encoded, [item["kind"] for item in batch], [item["probs"] for item in batch]
 
 
@@ -147,11 +147,11 @@ def main():
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--tokenizer", default="bert-base-uncased")
-    parser.add_argument("--epochs", type=int, default=1)
-    parser.add_argument("--batch-size", type=int, default=64)
+    parser.add_argument("--epochs", type=int, default=10)
+    parser.add_argument("--batch-size", type=int, default=512)
     parser.add_argument("--max-length", type=int, default=256)
     parser.add_argument("--lr", type=float, default=3e-4)
-    parser.add_argument("--choice-weight", type=float, default=1.0)
+    parser.add_argument("--choice-weight", type=float, default=8.0)
     parser.add_argument("--score-weight", type=float, default=1.0)
     parser.add_argument("--noul-weight", type=float, default=1.0)
     parser.add_argument("--seed", type=int, default=20261002)

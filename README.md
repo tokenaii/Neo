@@ -83,6 +83,11 @@ Neo must be tested on:
 
 Required metrics are accuracy, macro-F1, negative log-likelihood, Brier score, expected calibration error, selective accuracy, abstention rate, latency, and throughput.
 
+After every completed training run, `scripts/post_training_eval.sh` runs the
+held-out benchmark, latency test, and tool-router smoke test automatically.
+Results remain in the configured local results directory until explicitly
+approved for publication.
+
 ### Phase 4 — Scale decision
 
 Only after the from-scratch prototype passes the held-out gates will we decide whether to scale the same architecture to approximately 350M–500M parameters. The 1,000,000-decision run is a first research release, not a claim that Neo is a general-purpose Jev replacement.

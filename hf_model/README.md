@@ -31,8 +31,8 @@ Training method: RLCD-inspired soft-target training from scratch on synthetic
 decision records. See the project repository for code, manifests, run logs,
 and evaluation protocols.
 
-Language: English only. The released model and training corpus are not
-intended to support Arabic or multilingual inference.
+Language: English only. The released model and training corpus are intended
+for English inference only.
 
 The English-only release uses an English BERT tokenizer and a randomly
 initialized bidirectional Transformer encoder with typed decision heads.
