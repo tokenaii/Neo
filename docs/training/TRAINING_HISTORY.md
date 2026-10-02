@@ -6,13 +6,15 @@ The training process emits a JSON record every 100 optimizer steps containing:
 - optimizer step;
 - training loss.
 
-The authoritative live history is maintained on AWS while training is active:
+The authoritative live history is maintained on AWS while training is active
+and is published to this GitHub repository after each completed run:
 
 `/mnt/opet-data/neo/logs/neo-english-train.log`
 
 It is not yet copied into the public repository because the run is still in
 progress. After completion, the final history will be frozen together with the
-checkpoint hash and the evaluation artifacts.
+checkpoint hash and the evaluation artifacts. Training history and benchmark
+results are GitHub-only records and are not uploaded to Hugging Face.
 
 ## Evaluation records
 

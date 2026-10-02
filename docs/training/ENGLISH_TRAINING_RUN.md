@@ -25,5 +25,6 @@ The active run trains Neo exclusively on the regenerated English corpus.
 ## Publication policy
 
 The checkpoint is not replaced on the Hub until the held-out benchmark is
-complete and reviewed. Benchmark artifacts remain local until publication is
-explicitly approved.
+complete and reviewed. All training history and benchmark artifacts are
+published only in the GitHub project repository after review; they are not
+uploaded to the Hugging Face model or dataset repositories.

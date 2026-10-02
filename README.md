@@ -19,6 +19,14 @@ owned by TokenAI. Contact: info@tokenai.llc · https://tokenai.llc
   evaluation and benchmark scripts, configurations, examples, documentation,
   licenses, and reproducibility materials.
 
+## Training records policy
+
+All training code, configurations, live step logs, loss history, checkpoint
+metadata, evaluation reports, benchmark outputs, and training documentation are
+published only in this GitHub repository. The Hugging Face model and dataset
+repositories contain release artifacts and their documentation, but do not
+serve as the training-history archive.
+
 Neo is a **System One Model**: a probabilistic decision model that reads an application state and answers typed questions without generating free-form text.
 
 ## Training Method: RLCD
