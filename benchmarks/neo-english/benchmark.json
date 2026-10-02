@@ -1,0 +1,35 @@
+{
+  "checkpoint": "/mnt/opet-data/neo/runs/neo-english",
+  "device": "cuda",
+  "test_decisions": 99980,
+  "by_kind": {
+    "noul": {
+      "n": 40000,
+      "accuracy": 0.823775,
+      "nll": 0.5117249505064102,
+      "brier": 0.20511455523099448,
+      "ece_10bin": 0.020601219558715855
+    },
+    "choice": {
+      "n": 40000,
+      "accuracy": 0.187675,
+      "nll": 1.7885795395826314,
+      "brier": 0.7162031746831741,
+      "ece_10bin": 0.0030589562419801875
+    },
+    "score": {
+      "n": 19980,
+      "accuracy": 0.7399399399399399,
+      "nll": 0.7480343903605958,
+      "brier": 0.41997108209102085,
+      "ece_10bin": 0.06017495390173189
+    }
+  },
+  "tool_routing": {
+    "n": 40000,
+    "accuracy": 0.187675,
+    "predicted_tool_use_rate": 0.96395,
+    "actual_tool_use_rate": 0.90765,
+    "ece_10bin": 0.0030589562419801875
+  }
+}

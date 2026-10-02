@@ -1,0 +1,13 @@
+{
+  "tool": "file_read",
+  "probabilities": {
+    "search": 0.13351529836654663,
+    "calculator": 0.1281498670578003,
+    "browser": 0.1456388682126999,
+    "code": 0.15158843994140625,
+    "file_read": 0.16511106491088867,
+    "human_review": 0.14143399894237518,
+    "none": 0.13456247746944427
+  },
+  "requires_review": true
+}

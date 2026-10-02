@@ -1,0 +1,180 @@
+{
+  "device": "cuda",
+  "test_decisions": 99980,
+  "by_kind": {
+    "choice": {
+      "n": 40000,
+      "accuracy": 0.187675,
+      "macro_f1": 0.05267293942647048,
+      "majority_baseline": 0.1892,
+      "nll": 1.7880411096354953,
+      "brier": 0.8320874800979325,
+      "ece_10bin": 0.0030327826667576885,
+      "selective": {
+        "0.5": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        },
+        "0.7": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    },
+    "score": {
+      "n": 19980,
+      "accuracy": 0.7399399399399399,
+      "macro_f1": 0.28351167874813027,
+      "majority_baseline": 0.7399399399399399,
+      "nll": 0.7480343903605958,
+      "brier": 0.4199710820791074,
+      "ece_10bin": 0.06017495390173189,
+      "selective": {
+        "0.5": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.7399399399399399,
+          "abstention_rate": 0.0
+        },
+        "0.7": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    },
+    "noul": {
+      "n": 40000,
+      "accuracy": 0.823775,
+      "macro_f1": 0.45168674863949776,
+      "majority_baseline": 0.823775,
+      "nll": 0.4670005896412754,
+      "brier": 0.29118831801674794,
+      "ece_10bin": 0.020601219558715855,
+      "selective": {
+        "0.5": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.823775,
+          "abstention_rate": 0.0
+        },
+        "0.7": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.823775,
+          "abstention_rate": 0.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    }
+  },
+  "calibrated_temperature": 0.88,
+  "calibrated_by_kind": {
+    "choice": {
+      "n": 40000,
+      "accuracy": 0.187675,
+      "macro_f1": 0.05267293942647048,
+      "majority_baseline": 0.1892,
+      "nll": 1.788067882602983,
+      "brier": 0.8320980663998122,
+      "ece_10bin": 0.006465673172473901,
+      "selective": {
+        "0.5": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        },
+        "0.7": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    },
+    "score": {
+      "n": 19980,
+      "accuracy": 0.7399399399399399,
+      "macro_f1": 0.28351167874813027,
+      "majority_baseline": 0.7399399399399399,
+      "nll": 0.7414090020363493,
+      "brier": 0.415282548001449,
+      "ece_10bin": 0.021027398073637404,
+      "selective": {
+        "0.5": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.7399399399399399,
+          "abstention_rate": 0.0
+        },
+        "0.7": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.7399399399399399,
+          "abstention_rate": 0.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    },
+    "noul": {
+      "n": 40000,
+      "accuracy": 0.823775,
+      "macro_f1": 0.45168674863949776,
+      "majority_baseline": 0.823775,
+      "nll": 0.46584462415461186,
+      "brier": 0.29046638948769143,
+      "ece_10bin": 0.007965260124206508,
+      "selective": {
+        "0.5": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.823775,
+          "abstention_rate": 0.0
+        },
+        "0.7": {
+          "coverage": 1.0,
+          "selective_accuracy": 0.823775,
+          "abstention_rate": 0.0
+        },
+        "0.9": {
+          "coverage": 0.0,
+          "selective_accuracy": 0.0,
+          "abstention_rate": 1.0
+        }
+      }
+    }
+  },
+  "tool_routing": {
+    "n": 40000,
+    "accuracy": 0.187675,
+    "predicted_tool_use_rate": 0.96395,
+    "actual_tool_use_rate": 0.90765
+  },
+  "option_order_invariance": 0.0,
+  "unseen_tool_evaluation": {
+    "status": "not_available",
+    "reason": "No separately labeled unseen-tool split was provided."
+  },
+  "external_generalization": {
+    "status": "not_run",
+    "reason": "No external evaluation corpus was authorized or staged."
+  }
+}

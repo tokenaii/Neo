@@ -1,0 +1,10 @@
+{
+  "device": "cuda",
+  "batch_size": 128,
+  "batches": 100,
+  "total_decisions": 12800,
+  "elapsed_seconds": 1.2498404867947102,
+  "batch_latency_ms": 12.498404867947102,
+  "decision_latency_ms": 0.09764378803083673,
+  "decisions_per_second": 10241.306898951847
+}
