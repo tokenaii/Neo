@@ -123,8 +123,10 @@ def collate(batch, tokenizer, max_length):
     return encoded, [item["kind"] for item in batch], [item["probs"] for item in batch]
 
 
-def loss_for(logits, kinds, probs):
+def loss_for(logits, kinds, probs, kind_weights=None):
+    kind_weights = kind_weights or {"choice": 1.0, "score": 1.0, "noul": 1.0}
     losses = []
+    weights = []
     for index, kind in enumerate(kinds):
         target = torch.tensor(probs[index], device=logits.device, dtype=logits.dtype)
         if kind == "choice":
@@ -134,7 +136,10 @@ def loss_for(logits, kinds, probs):
         else:
             prediction = logits[index, :2]
         losses.append(-(target * torch.log_softmax(prediction.float(), dim=-1)).sum())
-    return torch.stack(losses).mean()
+        weights.append(kind_weights.get(kind, 1.0))
+    weighted_losses = torch.stack(losses)
+    weight_tensor = torch.tensor(weights, device=weighted_losses.device, dtype=weighted_losses.dtype)
+    return (weighted_losses * weight_tensor).sum() / weight_tensor.sum()
 
 
 def main():
@@ -146,6 +151,9 @@ def main():
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--max-length", type=int, default=256)
     parser.add_argument("--lr", type=float, default=3e-4)
+    parser.add_argument("--choice-weight", type=float, default=1.0)
+    parser.add_argument("--score-weight", type=float, default=1.0)
+    parser.add_argument("--noul-weight", type=float, default=1.0)
     parser.add_argument("--seed", type=int, default=20261002)
     args = parser.parse_args()
     if not torch.cuda.is_available():
@@ -166,7 +174,12 @@ def main():
             optimizer.zero_grad(set_to_none=True)
             with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
                 logits = model(encoded["input_ids"], encoded["attention_mask"], kinds)
-                loss = loss_for(logits, kinds, probs)
+                loss = loss_for(
+                    logits,
+                    kinds,
+                    probs,
+                    {"choice": args.choice_weight, "score": args.score_weight, "noul": args.noul_weight},
+                )
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
